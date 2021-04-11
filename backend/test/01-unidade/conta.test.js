@@ -11,7 +11,9 @@ testWithDb(() => {
 
       const dadosClientes = conta({ dataHoraCriacao });
 
-      const [contaCadastrado] = await services.conta.cadastrar(dadosClientes);
+      const [contaCadastrado] = await services.conta.cadastrarConta(
+        dadosClientes
+      );
 
       expect(contaCadastrado.agencia).toEqual(dadosClientes.agencia);
       expect(contaCadastrado.clienteId).toEqual(dadosClientes.clienteId);
@@ -26,11 +28,13 @@ testWithDb(() => {
     it("ataulizar: atualiza conta e verifica se os dados foram atualizados corretamente", async () => {
       const dadosClientes = conta({});
 
-      const [contaCadastrado] = await services.conta.cadastrar(dadosClientes);
+      const [contaCadastrado] = await services.conta.cadastrarConta(
+        dadosClientes
+      );
 
       const novaAgencia = "9999";
 
-      const contaAtualizada = await services.conta.atualizar(
+      const contaAtualizada = await services.conta.atualizarConta(
         contaCadastrado._id,
         { agencia: novaAgencia }
       );
