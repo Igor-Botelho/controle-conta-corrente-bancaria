@@ -14,6 +14,7 @@ const clienteSchema = new mongoose.Schema({
   uf: { type: String, required: true },
   dataNascimento: { type: String, required: true },
   contasBancarias: { type: Object },
+  dataHoraCriacao: { type: Date, required: true },
 });
 
 module.exports = clienteSchema;
