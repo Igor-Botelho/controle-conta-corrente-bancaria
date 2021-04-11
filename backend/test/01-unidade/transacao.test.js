@@ -9,29 +9,29 @@ testWithDb(() => {
     it("cadastrar: cadastra transação de crédito e verifica se os dados foram cadastrados corretamente", async () => {
       const dataHoraTransacao = new Date();
 
-      const dadosTranscao = transacao.credito({ dataHoraTransacao });
+      const dadosTransacao = transacao.credito({ dataHoraTransacao });
 
-      const [transacaoCadastrado] = await services.transacao.cadastrar(
-        dadosTranscao
-      );
+      const [
+        transacaoCadastrado,
+      ] = await services.transacao.cadastrarTransacaoCredito(dadosTransacao);
 
-      expect(transacaoCadastrado.contaId).toEqual(dadosTranscao.contaId);
-      expect(transacaoCadastrado.tipo).toEqual(dadosTranscao.tipo);
-      expect(transacaoCadastrado.valor).toEqual(dadosTranscao.valor);
+      expect(transacaoCadastrado.contaId).toEqual(dadosTransacao.contaId);
+      expect(transacaoCadastrado.tipo).toEqual(dadosTransacao.tipo);
+      expect(transacaoCadastrado.valor).toEqual(dadosTransacao.valor);
     });
 
     it("cadastrar: cadastra transação de debito e verifica se os dados foram cadastrados corretamente", async () => {
       const dataHoraTransacao = new Date();
 
-      const dadosTranscao = transacao.debito({ dataHoraTransacao });
+      const dadosTransacao = transacao.debito({ dataHoraTransacao });
 
-      const [transacaoCadastrado] = await services.transacao.cadastrar(
-        dadosTranscao
-      );
+      const [
+        transacaoCadastrado,
+      ] = await services.transacao.cadastrarTransacaoDebito(dadosTransacao);
 
-      expect(transacaoCadastrado.contaId).toEqual(dadosTranscao.contaId);
-      expect(transacaoCadastrado.tipo).toEqual(dadosTranscao.tipo);
-      expect(transacaoCadastrado.valor).toEqual(dadosTranscao.valor);
+      expect(transacaoCadastrado.contaId).toEqual(dadosTransacao.contaId);
+      expect(transacaoCadastrado.tipo).toEqual(dadosTransacao.tipo);
+      expect(transacaoCadastrado.valor).toEqual(dadosTransacao.valor);
     });
   });
 });

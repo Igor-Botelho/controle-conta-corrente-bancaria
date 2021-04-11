@@ -1,3 +1,4 @@
 module.exports = {
-  cadastrar: require("./cadastrar"),
+  cadastrarTransacaoCredito: require("./cadastrar-transacao-credito"),
+  cadastrarTransacaoDebito: require("./cadastrar-transacao-debito"),
 };
