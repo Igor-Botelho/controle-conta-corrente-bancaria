@@ -22,5 +22,20 @@ testWithDb(() => {
       expect(contaCadastrado.saldo).toEqual(dadosClientes.saldo);
       expect(contaCadastrado.tipo).toEqual(dadosClientes.tipo);
     });
+
+    it("ataulizar: atualiza conta e verifica se os dados foram atualizados corretamente", async () => {
+      const dadosClientes = conta({});
+
+      const [contaCadastrado] = await services.conta.cadastrar(dadosClientes);
+
+      const novaAgencia = "9999";
+
+      const contaAtualizada = await services.conta.atualizar(
+        contaCadastrado._id,
+        { agencia: novaAgencia }
+      );
+
+      expect(contaAtualizada.agencia).toEqual(novaAgencia);
+    });
   });
 });
