@@ -16,7 +16,7 @@ const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Serve at http://localhost:${port}`);
 
-  cron.schedule("*/30 * * * *", async function () {
+  cron.schedule("0 */24 * * *", async function () {
     console.log(
       "=========== Executando rotina de calculo de rendimentos diarios conta ============="
     );

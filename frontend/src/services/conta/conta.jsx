@@ -36,7 +36,7 @@ function Conta() {
             <p className="saldo-titulo">Saldo</p>
             <p className="saldo">R${maskValor(conta.saldo)}</p>
             <p className="saldo-Rendimento">
-              Rendimento{" "}
+              Rendimento mensal{" "}
               <span className="rendimento">
                 R${maskValor(conta.rendimento)}
               </span>

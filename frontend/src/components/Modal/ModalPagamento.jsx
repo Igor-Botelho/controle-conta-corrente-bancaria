@@ -38,18 +38,22 @@ function ModalPgamento({ contaId }) {
           onChange={handleInputChange}
           placeholder="Digite o numero do boleto"
         />
-        <p>
-          <span className="boleto-exemplo-titulo">
-            Boleto exemplo com valor fixo:
-          </span>
-          00194444505123456987012159632500085920000001500
-        </p>
-        <p>
-          <span className="boleto-exemplo-titulo">
-            Boleto exemplo com valor digitavel:
-          </span>
-          00194444505123456987012159632500085920000000000
-        </p>
+        <ul className="boleto-exemplo-titulo">
+          <li>
+            <p className="boleto-exemplo-geral">
+              <small>Boleto exemplo com valor fixo:</small>
+              <br />
+              <b>00194444505123456987012159632500085920000001500</b>
+            </p>
+          </li>
+          <li>
+            <p className="boleto-exemplo-geral">
+              <small>Boleto exemplo com valor digitavel:</small>
+              <br />
+              <b>00194444505123456987012159632500085920000000000</b>
+            </p>
+          </li>
+        </ul>
       </div>
     );
   };

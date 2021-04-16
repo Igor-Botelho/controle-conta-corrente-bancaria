@@ -1,8 +1,10 @@
+import PropTypes from "prop-types";
 import React from "react";
 import { Chart } from "react-google-charts";
-import PropTypes from "prop-types";
 
-function GraficoRendimentos({saldo, rendimento}) {
+function GraficoRendimentos({ saldo, rendimento }) {
+  console.log({ rendimento });
+
   return (
     <Chart
       width={"22rem"}
@@ -11,8 +13,8 @@ function GraficoRendimentos({saldo, rendimento}) {
       loader={<div>Grafico</div>}
       data={[
         ["Saldo", "Hours per Day"],
-        ["Saldo", saldo],
-        ["Rendimentos", rendimento],
+        ["Saldo", saldo / 100],
+        ["Rendimentos", rendimento / 100],
       ]}
       options={{
         title: "Rendimentos",
@@ -22,7 +24,6 @@ function GraficoRendimentos({saldo, rendimento}) {
     />
   );
 }
-
 
 GraficoRendimentos.propTypes = {
   saldo: PropTypes.number,

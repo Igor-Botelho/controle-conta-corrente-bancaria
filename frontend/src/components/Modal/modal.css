@@ -92,8 +92,22 @@
 .boleto-exemplo-titulo {
   font-size: 1rem;
   font-weight: bolder;
+  text-align: left;
+  list-style: none;
+  margin-top: 1rem;
+  margin-left: 4rem;
 }
 
 .boleto-exemplo {
   padding: 1rem;
+}
+
+.boleto-exemplo-geral {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 980px) {
+  .boleto-exemplo-titulo {
+    margin-left: 0;
+  }
 }
