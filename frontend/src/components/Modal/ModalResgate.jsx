@@ -62,7 +62,7 @@ function ModalResgate({ contaId }) {
             A transferencia foi realizada para a conta
           </p>
           <p>Banco:{contasBancarias.banco}</p>
-          <p>NUmero Conta:{contasBancarias.numeroConta}</p>
+          <p>Numero Conta:{contasBancarias.numeroConta}</p>
           <p>Agencia:{contasBancarias.agencia}</p>
           <p>Tipo:{contasBancarias.tipo}</p>
         </div>
