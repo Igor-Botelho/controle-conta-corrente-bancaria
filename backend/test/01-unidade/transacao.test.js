@@ -7,9 +7,7 @@ const { transacao } = require("../fixtures");
 testWithDb(() => {
   describe("Transacao", () => {
     it("cadastrar: cadastra transação de crédito e verifica se os dados foram cadastrados corretamente", async () => {
-      const dataHoraTransacao = new Date();
-
-      const dadosTransacao = transacao.credito({ dataHoraTransacao });
+      const dadosTransacao = transacao.credito();
 
       const [
         transacaoCadastrado,
@@ -21,9 +19,7 @@ testWithDb(() => {
     });
 
     it("cadastrar: cadastra transação de debito e verifica se os dados foram cadastrados corretamente", async () => {
-      const dataHoraTransacao = new Date();
-
-      const dadosTransacao = transacao.debito({ dataHoraTransacao });
+      const dadosTransacao = transacao.debito();
 
       const [
         transacaoCadastrado,
@@ -32,6 +28,20 @@ testWithDb(() => {
       expect(transacaoCadastrado.contaId).toEqual(dadosTransacao.contaId);
       expect(transacaoCadastrado.tipo).toEqual(dadosTransacao.tipo);
       expect(transacaoCadastrado.valor).toEqual(dadosTransacao.valor);
+    });
+
+    it("consultar: consulta as transações cadastradas e verifica a quantidade", async () => {
+      const dadosTransacaoDebito = transacao.debito();
+
+      await services.transacao.cadastrarTransacaoDebito(dadosTransacaoDebito);
+
+      const dadosTransacaoCredito = transacao.credito();
+
+      await services.transacao.cadastrarTransacaoCredito(dadosTransacaoCredito);
+
+      const transacoes = await services.transacao.consultar();
+
+      expect(transacoes.length).toEqual(2);
     });
   });
 });

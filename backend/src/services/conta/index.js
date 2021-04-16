@@ -1,5 +1,6 @@
 module.exports = {
-  atualizarConta: require("./atualizar"),
-  cadastrarConta: require("./cadastrar"),
-  recuperarConta: require("./recuperar"),
+  atualizar: require("./atualizar"),
+  cadastrar: require("./cadastrar"),
+  consultar: require("./consultar"),
+  recuperar: require("./recuperar"),
 };

@@ -1,14 +1,16 @@
+"use strict";
+
 const { dbTransacao } = require("../../db/models");
+const { gerarLinhaDigitavelBoleto } = require("../linha-digitavel-boleto");
 
 module.exports = function cadastrar(dados) {
-  const codigoBarras = "001.9.3.3737.0000000100.0500940144816060680935031";
-  const linhaDigitavel =
-    "00000.00000.00000.000000.00000.000000.0.51980000015000";
+  const dataAtual = new Date();
+
+  const linhaDigitavel = gerarLinhaDigitavelBoleto(dados.valor, dataAtual);
 
   return dbTransacao.cadastrar({
     ...dados,
-    ...{ dataHoraTransacao: new Date() },
-    codigoBarras,
+    ...{ dataHoraTransacao: dataAtual },
     linhaDigitavel,
   });
 };
