@@ -8,9 +8,9 @@ Resgate: O usuário digitar o valor que deseja realizar o resgate em seguida é 
 
 Pagamento: O usuário digita a linha digitável do boleto, se a linha tiver o valor do boleto o mesmo é debitado da conta, caso não tenha o usuário digita o valor que deseja pagar. 
 
-//linha digitavel
+Linha digitável: É gerado a linha do boleto de depósito seguindo a documentação http://www.jrimum.org/bopepo/wiki/Componente/Documentacao/Negocio#Aceite, não foram gerados os digitos verificadores vai ser adicionado posteriormente.
 
-/rotina de rendimentos
+Rotina de rendimento: A rotina de rendimento roda a cada 24 horas, o valor do rendimento é calculado com o saldo atual * uma taxa de juros diaria, foi definido um valor de taxa de 0.005 para testes mas  ela é parametrizevel, a rotina calcula o rendimento do mês acumulando os rendimentos diarios, no primeiro dia de cada mês é zerado o rendimento mensal do mês anterior e começa a conta o do mês atual, nesse momento é salva uma transação no banco de dados com o valor em rendimentos do mês que passou.
 
 E mostrado ao usuário um histórico das operações realizadas, com o valor, tipo, data, hora e status da solicitação. 
 
@@ -34,8 +34,7 @@ E mostrado ao usuário um histórico das operações realizadas, com o valor, ti
 
 #A estrutura do backend consiste em
 
-
-![image](https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png)
+![image](https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png =10px)
 
 A estrutura é dividida em um db responsável pelos models e schemas dos serviços e os serviços que chamam as funções do model e fazendo os devidos tratamentos antes dos dados serem salvos no db.
 
