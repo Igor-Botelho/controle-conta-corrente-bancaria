@@ -42,7 +42,7 @@ Cada serviço tem seus testes de unidade e de integração com cobertura de 100%
 <img src="https://user-images.githubusercontent.com/18398837/114960636-d5acd700-9e3d-11eb-951b-4e0c390febaa.png"  width="800">
 
 
-# A estrutura do front consiste em
+# A estrutura do front consiste em:
 
 <img src="https://user-images.githubusercontent.com/18398837/114959379-528a8180-9e3b-11eb-8131-2e17fdd84f44.png"  width="300">
 
