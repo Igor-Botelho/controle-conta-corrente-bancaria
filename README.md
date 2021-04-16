@@ -102,9 +102,9 @@ Ao confirmar o valor é mostrado as opções de deposito transferência e boleto
 ![image](https://user-images.githubusercontent.com/18398837/114962393-f9255100-9e40-11eb-8f04-0ce6f38c475f.png)
 
 
-![image](https://user-images.githubusercontent.com/18398837/114962497-2540d200-9e41-11eb-9bcc-aaccab8f9872.png)
+![image](https://user-images.githubusercontent.com/18398837/114967795-7e156800-9e4b-11eb-9fcf-f566bec23ea7.png)
 
-![image](https://user-images.githubusercontent.com/18398837/114962515-2d007680-9e41-11eb-986c-fc4d6aab4c90.png)
+![image](https://user-images.githubusercontent.com/18398837/114967773-73f36980-9e4b-11eb-8462-c13e9371f7d5.png)
 
 Além disso existe um modal modal para a listagem das transações clicando no VER MAIS na página inicial
 
