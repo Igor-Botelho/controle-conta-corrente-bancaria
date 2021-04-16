@@ -84,8 +84,7 @@ Não existe criação de usuário, o projeto já é inicializado com um usuário
 
 # Como utilizar
 
-![image](https://user-images.githubusercontent.com/18398837/114961880-10b00a00-9e40-11eb-8c5d-6b83141e2456.png)
-
+![image](https://user-images.githubusercontent.com/18398837/115018878-c9049f00-9e8e-11eb-8d24-fab89ca77cd1.png)
 
 A tela principal no canto esquerdo apresenta o saldo da conta e o rendimento no mês da conta, em baixo possui um gráfico com esses valores, no canto direito tem a visualização das transações realizadas e as operações disponiveis.
 
@@ -124,7 +123,7 @@ Além disso existe um modal modal para a listagem das transações clicando no V
 
 <img src="https://user-images.githubusercontent.com/18398837/115016633-b2a91400-9e8b-11eb-80d1-c136c4c86b61.png"  width="400">
 
-<img src="https://user-images.githubusercontent.com/18398837/115016662-c2285d00-9e8b-11eb-98b8-45effb0df087.png"  width="400">
+<img src="https://user-images.githubusercontent.com/18398837/115019060-0701c300-9e8f-11eb-8691-ab6ccd676ad6.png"  width="400">
 
 <img src="https://user-images.githubusercontent.com/18398837/115016699-cf454c00-9e8b-11eb-8767-315f0d6834f0.png"  width="400">
 
