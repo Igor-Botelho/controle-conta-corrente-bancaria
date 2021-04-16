@@ -1,5 +1,7 @@
+"use strict";
+
 const { dbConta } = require("../../db/models");
 
-module.exports = function cadastrar(contaId, dados) {
-  return dbConta.atualizar(contaId, dados);
+module.exports = function atualizar(contaId, dadosAtualizacao) {
+  return dbConta.atualizar(contaId, dadosAtualizacao);
 };

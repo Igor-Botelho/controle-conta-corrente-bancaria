@@ -1,3 +1,5 @@
+"use strict";
+
 const mongoose = require("mongoose");
 
 const ContaSchema = new mongoose.Schema(
@@ -12,6 +14,7 @@ const ContaSchema = new mongoose.Schema(
       enum: ["corrente", "poupanca", "salario"],
       required: true,
     },
+    rendimento: { type: Number, default: 0 },
   },
   { versionKey: false }
 );
