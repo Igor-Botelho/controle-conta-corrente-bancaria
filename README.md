@@ -26,12 +26,13 @@ O projeto consiste em um controle de conta corrente bancária que processa solic
 - Express
 - Axios
 - jest
+- Node-cro para criar a rotina de rendimentos com periodicidade de 24h [https://www.npmjs.com/package/node-cron]
 
 # A estrutura do backend consiste em:
 
 <img src= "https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png" width="400">
 
-A estrutura é dividida em uma past db responsável pelos models e schemas dos serviços e os serviços que chamam as funções do model e fazendo os devidos tratamentos antes dos dados serem processados pelo model.
+A estrutura é dividida em uma pasta db responsável pelos models e schemas dos serviços e os serviços que chamam as funções do model e fazendo os devidos tratamentos antes dos dados serem processados pelo model.
 
 <img src="https://user-images.githubusercontent.com/18398837/114959151-d98b2a00-9e3a-11eb-8588-549086b789ef.png"  width="400">
 
@@ -42,7 +43,7 @@ Cada serviço tem seus testes de unidade e de integração com cobertura de 100%
 <img src="https://user-images.githubusercontent.com/18398837/114960636-d5acd700-9e3d-11eb-951b-4e0c390febaa.png"  width="800">
 
 
-# A estrutura do front consiste em
+# A estrutura do front consiste em:
 
 <img src="https://user-images.githubusercontent.com/18398837/114959379-528a8180-9e3b-11eb-8131-2e17fdd84f44.png"  width="300">
 
@@ -57,9 +58,9 @@ O backend serve como serviço de banco de dados, o frontend serve como uma inter
 
 Para executar esse programa é necessário: 
 
-- MongoDB shell version v4.4.3 
+- MongoDB shell o ambiente de desenvolvimento tinha a versão version v4.4.3 [https://docs.mongodb.com/manual/installation/]
 
-- Node v14.15.0
+- Node o ambiente de desenvolvimento tinha a versão v14.15.0 [https://nodejs.org/en/download/]
 
  # Instalando dependências
  
@@ -83,8 +84,7 @@ Não existe criação de usuário, o projeto já é inicializado com um usuário
 
 # Como utilizar
 
-![image](https://user-images.githubusercontent.com/18398837/114961880-10b00a00-9e40-11eb-8c5d-6b83141e2456.png)
-
+![image](https://user-images.githubusercontent.com/18398837/115018878-c9049f00-9e8e-11eb-8d24-fab89ca77cd1.png)
 
 A tela principal no canto esquerdo apresenta o saldo da conta e o rendimento no mês da conta, em baixo possui um gráfico com esses valores, no canto direito tem a visualização das transações realizadas e as operações disponiveis.
 
@@ -118,4 +118,19 @@ Ao confirmar o valor é mostrado as opções de deposito transferência e boleto
 Além disso existe um modal modal para a listagem das transações clicando no VER MAIS na página inicial
 
 ![image](https://user-images.githubusercontent.com/18398837/114962556-44d7fa80-9e41-11eb-90ec-a724003a0860.png)
+
+# Versão mobile
+
+<img src="https://user-images.githubusercontent.com/18398837/115016633-b2a91400-9e8b-11eb-80d1-c136c4c86b61.png"  width="400">
+
+<img src="https://user-images.githubusercontent.com/18398837/115019060-0701c300-9e8f-11eb-8691-ab6ccd676ad6.png"  width="400">
+
+<img src="https://user-images.githubusercontent.com/18398837/115016699-cf454c00-9e8b-11eb-8767-315f0d6834f0.png"  width="400">
+
+<img src="https://user-images.githubusercontent.com/18398837/115016732-d9ffe100-9e8b-11eb-8c1c-2f6b6ef0f77c.png"  width="400">
+
+<img src="https://user-images.githubusercontent.com/18398837/115016769-e8e69380-9e8b-11eb-829a-2cf7124bd31c.png"  width="400">
+
+<img src="https://user-images.githubusercontent.com/18398837/115016812-f8fe7300-9e8b-11eb-83c9-9d0f71b44ce4.png"  width="400">
+
 
