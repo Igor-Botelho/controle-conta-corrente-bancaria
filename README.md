@@ -26,6 +26,7 @@ O projeto consiste em um controle de conta corrente bancária que processa solic
 - Express
 - Axios
 - jest
+- Node-cro para criar a rotina de rendimentos com periodicidade de 24h [https://www.npmjs.com/package/node-cron]
 
 # A estrutura do backend consiste em:
 
@@ -118,4 +119,19 @@ Ao confirmar o valor é mostrado as opções de deposito transferência e boleto
 Além disso existe um modal modal para a listagem das transações clicando no VER MAIS na página inicial
 
 ![image](https://user-images.githubusercontent.com/18398837/114962556-44d7fa80-9e41-11eb-90ec-a724003a0860.png)
+
+# Mobile versão
+
+<img src="https://user-images.githubusercontent.com/18398837/115016633-b2a91400-9e8b-11eb-80d1-c136c4c86b61.png"  width="400">
+
+<img src="https://user-images.githubusercontent.com/18398837/115016662-c2285d00-9e8b-11eb-98b8-45effb0df087.png"  width="400">
+
+<img src="https://user-images.githubusercontent.com/18398837/115016699-cf454c00-9e8b-11eb-8767-315f0d6834f0.png"  width="400">
+
+<img src="https://user-images.githubusercontent.com/18398837/115016732-d9ffe100-9e8b-11eb-8c1c-2f6b6ef0f77c.png"  width="400">
+
+<img src="https://user-images.githubusercontent.com/18398837/115016769-e8e69380-9e8b-11eb-829a-2cf7124bd31c.png"  width="400">
+
+<img src="https://user-images.githubusercontent.com/18398837/115016812-f8fe7300-9e8b-11eb-83c9-9d0f71b44ce4.png"  width="400">
+
 
