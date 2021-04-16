@@ -27,10 +27,8 @@ function getCollections(mongoose) {
 }
 
 async function clearCollection(mongoose, collectionsNames) {
-  if (collectionsNames) {
-    for ({ name } of collectionsNames) {
-      await mongoose.connection.collection(name).drop();
-    }
+  for ({ name } of collectionsNames) {
+    await mongoose.connection.collection(name).drop();
   }
 }
 
