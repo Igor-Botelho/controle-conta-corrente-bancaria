@@ -24,5 +24,12 @@ testWithDb(() => {
         cliente.contasBancarias
       );
     });
+
+    it("consultar: consulta cliente e verifica a quantidade de cliente cadastrado", async () => {
+      await services.cliente.cadastrar(cliente);
+      const clientes = await services.cliente.consultar();
+
+      expect(clientes.length).toEqual(1);
+    });
   });
 });
