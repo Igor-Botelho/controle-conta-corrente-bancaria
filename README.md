@@ -1,6 +1,6 @@
 O projeto consiste em um controle de conta corrente bancária que processa solicitações de depósito, resgate e pagamentos. 
 
-#As regras presentes nesse software são: 
+# As regras presentes nesse software são: 
 
 Depósito: O usuário digita o valor do depósito em seguida é dado a opção para o mesmo escolher o boleto que quer fazer o depósito ou uma conta para fazer transferência. 
 
@@ -14,7 +14,7 @@ Rotina de rendimento: A rotina de rendimento roda a cada 24 horas, o valor do re
 
 Histórico das operações: toda transação é salva no banco de dados e no frontend aparecem essas transações.
 
-#As principais tecnologias utilizadas foram
+# As principais tecnologias utilizadas foram
 
 -Javascript 
 -Nodejs 
@@ -25,7 +25,7 @@ Histórico das operações: toda transação é salva no banco de dados e no fro
 -Axios
 -jest
 
-#A estrutura do backend consiste em:
+# A estrutura do backend consiste em:
 
 ![image](https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png)
 
@@ -40,7 +40,7 @@ Cada serviço tem seus testes de unidade e de integração com cobertura de 100%
 ![image](https://user-images.githubusercontent.com/18398837/114960636-d5acd700-9e3d-11eb-951b-4e0c390febaa.png)
 
 
-#A estrutura do front consiste em
+# A estrutura do front consiste em
 
 ![image](https://user-images.githubusercontent.com/18398837/114959379-528a8180-9e3b-11eb-8131-2e17fdd84f44.png)
 
@@ -48,12 +48,12 @@ A estrutura do frontend possui uma pasta backend responsável por chamar os mét
 
  
 
-#Fluxo do software: 
+# Fluxo do software: 
  
 O backend serve como serviço de banco de dados, o frontend serve como uma interface, onde para cada chamada de API é utilizado a store do redux para armazenar os dados, assim tendo maior otimização e controle dos dados, as chamadas são feitas com o Axios e lidadas com o Express. 
 
 
-#Ambiente
+# Ambiente
 
 Para executar esse programa é necessário: 
 
@@ -62,7 +62,7 @@ Para executar esse programa é necessário:
 -Node v14.15.0
 
  
-#Como executar: 
+# Como executar: 
 
 1 passo: abra dois terminais no caminho /controle-conta-corrente-bancaria/frontend  
 2 passo: no primeiro terminal execute npm run start-server para executar o servidor do mongo db 
@@ -71,7 +71,7 @@ Para executar esse programa é necessário:
 Não existe criação de usuário, o projeto já é inicializado com um usuário padrão.
 
 
-#Como utilizar
+# Como utilizar
 
 ![image](https://user-images.githubusercontent.com/18398837/114961880-10b00a00-9e40-11eb-8c5d-6b83141e2456.png)
 
