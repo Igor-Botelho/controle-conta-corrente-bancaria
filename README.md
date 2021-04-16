@@ -57,9 +57,9 @@ O backend serve como serviço de banco de dados, o frontend serve como uma inter
 
 Para executar esse programa é necessário: 
 
-- MongoDB shell version v4.4.3 
+- MongoDB shell o ambiente de desenvolvimento tinha a versão version v4.4.3 [https://docs.mongodb.com/manual/installation/]
 
-- Node v14.15.0
+- Node o ambiente de desenvolvimento tinha a versão v14.15.0 [https://nodejs.org/en/download/]
 
  # Instalando dependências
  
