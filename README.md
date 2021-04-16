@@ -29,22 +29,22 @@ Histórico das operações: toda transação é salva no banco de dados e no fro
 
 # A estrutura do backend consiste em:
 
-!<img src= "https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png" width="400">
+<img src= "https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png" width="400">
 
 A estrutura é dividida em um db responsável pelos models e schemas dos serviços e os serviços que chamam as funções do model e fazendo os devidos tratamentos antes dos dados serem salvos no db.
 
-!<img src="https://user-images.githubusercontent.com/18398837/114959151-d98b2a00-9e3a-11eb-8588-549086b789ef.png"  width="400">
+<img src="https://user-images.githubusercontent.com/18398837/114959151-d98b2a00-9e3a-11eb-8588-549086b789ef.png"  width="400">
 
 Cada serviço tem seus testes de unidade e de integração com cobertura de 100%.
 
-!<img src="https://user-images.githubusercontent.com/18398837/114960620-cf1e5f80-9e3d-11eb-8cbb-0e5a90b95cdd.png"  width="800"> 
+<img src="https://user-images.githubusercontent.com/18398837/114960620-cf1e5f80-9e3d-11eb-8cbb-0e5a90b95cdd.png"  width="800"> 
 
-!<img src="https://user-images.githubusercontent.com/18398837/114960636-d5acd700-9e3d-11eb-951b-4e0c390febaa.png"  width="800">
+<img src="https://user-images.githubusercontent.com/18398837/114960636-d5acd700-9e3d-11eb-951b-4e0c390febaa.png"  width="800">
 
 
 # A estrutura do front consiste em
 
-!<img src="https://user-images.githubusercontent.com/18398837/114959379-528a8180-9e3b-11eb-8131-2e17fdd84f44.png"  width="400">
+<img src="https://user-images.githubusercontent.com/18398837/114959379-528a8180-9e3b-11eb-8131-2e17fdd84f44.png"  width="300">
 
 A estrutura do frontend possui uma pasta backend responsável por chamar os métodos do backend  e retornar as respostas para o front end. Além dessa página existe a página de componente, pages e serviços essa qual possui os serviços e os arquivos responsáveis pelas chamas de api. 
 
