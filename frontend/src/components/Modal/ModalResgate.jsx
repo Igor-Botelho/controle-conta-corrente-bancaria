@@ -99,6 +99,7 @@ function ModalResgate({ contaId }) {
               setModalShow(false);
               setResgatado(false);
               setBody(inicial());
+              setValor({ resgate: 0 });
             }}
           >
             Fechar

@@ -68,6 +68,7 @@ function ModalDeposito({ contaId }) {
                 preencherValor: true,
               });
               setBody(inicial());
+              setValor({ Deposito: 0 });
             }}
           >
             Fechar
