@@ -6,7 +6,8 @@ module.exports = ({ clienteId, dataHoraCriacao }) => {
     clienteId: clienteId || mongoose.Types.ObjectId(),
     dataHoraCriacao: dataHoraCriacao || new Date(),
     numeroConta: "55555559",
-    saldo: 150000,
+    saldo: 100000,
     tipo: "corrente",
+    rendimento: 1000,
   };
 };
