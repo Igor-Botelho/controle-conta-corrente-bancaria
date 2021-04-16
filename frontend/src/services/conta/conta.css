@@ -1,0 +1,59 @@
+.container {
+  position: absolute;
+  top: 18%;
+  display: grid;
+  grid-template-columns: 30rem 40rem;
+}
+
+.saldo-titulo,
+.atualizacao-titulo {
+  font-family: "Rubik";
+  color: #1d3072;
+  font-size: 4rem;
+}
+
+.saldo-Rendimento {
+  font-family: "Rubik";
+  color: #1d3072;
+  font-size: 1rem;
+}
+
+.atualizacao-titulo {
+  font-size: 3rem;
+}
+
+.saldo {
+  color: #909093;
+  font-size: 3rem;
+}
+
+.rendimento {
+  color: #909093;
+  font-size: 1rem;
+}
+
+.operacoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    top: 3%;
+    grid-template-columns: 100%;
+  }
+
+  .item-atualizacao {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .cards {
+    text-align: center;
+  }
+
+  .operacoes {
+    justify-content: unset;
+    display: block;
+  }
+}
