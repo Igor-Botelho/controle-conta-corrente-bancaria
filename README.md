@@ -31,7 +31,7 @@ O projeto consiste em um controle de conta corrente bancária que processa solic
 
 <img src= "https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png" width="400">
 
-A estrutura é dividida em uma past db responsável pelos models e schemas dos serviços e os serviços que chamam as funções do model e fazendo os devidos tratamentos antes dos dados serem processados pelo model.
+A estrutura é dividida em uma pasta db responsável pelos models e schemas dos serviços e os serviços que chamam as funções do model e fazendo os devidos tratamentos antes dos dados serem processados pelo model.
 
 <img src="https://user-images.githubusercontent.com/18398837/114959151-d98b2a00-9e3a-11eb-8588-549086b789ef.png"  width="400">
 
