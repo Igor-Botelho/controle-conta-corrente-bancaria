@@ -35,7 +35,7 @@ As principais tecnologias utilizadas foram:
 A estrutura do backend consiste em:
 
 
-![image](https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png  =30x30)
+![image](https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png  =10x10)
 
 A estrutura é dividida em um db responsável pelos módulos e sememas dos serviços e os serviços que chamam as funções do model e fazendo os devidos tratamentos antes dos dados serem salvos.
 
