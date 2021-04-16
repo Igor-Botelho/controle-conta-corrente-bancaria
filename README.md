@@ -67,7 +67,7 @@ Para executar esse programa é necessário:
  - 2 passo: execute npm install
  - 3 passo: abra um terminal no caminho /controle-conta-corrente-bancaria/frontend.
  - 4 passo: execute npm install
- - 5 passo: abra um terminal no caminho /controle-conta-corrente-bancaria/backend.
+ - 5 passo: abra um terminal no caminho /controle-conta-corrente-bancaria/frontend.
  - 6 passo: execute npm run build
 
  
