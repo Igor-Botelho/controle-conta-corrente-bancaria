@@ -61,6 +61,15 @@ Para executar esse programa é necessário:
 
 - Node v14.15.0
 
+ # Instalando dependências
+ 
+ - 1 passo: abra um terminal no caminho /controle-conta-corrente-bancaria/backend.
+ - 2 passo: execute npm install
+ - 4 passo: abra um terminal no caminho /controle-conta-corrente-bancaria/frontend.
+ - 5 passo: execute npm install
+ - 6 passo: abra um terminal no caminho /controle-conta-corrente-bancaria/backend.
+ - 7 passo: execute npm run build
+
  
 # Como executar: 
 
