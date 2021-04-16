@@ -1,8 +1,8 @@
 O projeto consiste em um controle de conta corrente bancária que processa solicitações de depósito, resgate e pagamentos. 
 
-#As regras presentes nesse softare são: 
+#As regras presentes nesse software são: 
 
-Depósito:  O usuário digita o valor do deposito em seguida é dado a opção para o mesmo escolher o boleto que quer fazer o depósito ou uma conta para fazer transferência. 
+Depósito: O usuário digita o valor do depósito em seguida é dado a opção para o mesmo escolher o boleto que quer fazer o depósito ou uma conta para fazer transferência. 
 
 Resgate: O usuário digitar o valor que deseja realizar o resgate em seguida é mostrada a conta do usuário ao qual o resgate foi enviado. 
 
@@ -12,27 +12,20 @@ Linha digitável: É gerado a linha do boleto de depósito seguindo a documenta�
 
 Rotina de rendimento: A rotina de rendimento roda a cada 24 horas, o valor do rendimento é calculado com o saldo atual * uma taxa de juros diaria, foi definido um valor de taxa de 0.005 para testes mas  ela é parametrizevel, a rotina calcula o rendimento do mês acumulando os rendimentos diarios, no primeiro dia de cada mês é zerado o rendimento mensal do mês anterior e começa a conta o do mês atual, nesse momento é salva uma transação no banco de dados com o valor em rendimentos do mês que passou.
 
-E mostrado ao usuário um histórico das operações realizadas, com o valor, tipo, data, hora e status da solicitação. 
+Histórico das operações: toda transação é salva no banco de dados e no frontend aparecem essas transações.
 
 #As principais tecnologias utilizadas foram
 
 -Javascript 
-
 -Nodejs 
-
 -React 
-
 -Redux 
-
 -MongoDb/mongoose
-
 -Express
-
 -Axios
-
 -jest
 
-#A estrutura do backend consiste em
+#A estrutura do backend consiste em:
 
 ![image](https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png)
 
@@ -114,9 +107,4 @@ Ao confirmar o valor é mostrado as opções de deposito transferencia e boleto,
 Além disso existe um modal modal para a listagem das transações clicando no VER MAIS na página inicial
 
 ![image](https://user-images.githubusercontent.com/18398837/114962556-44d7fa80-9e41-11eb-90ec-a724003a0860.png)
-
-
-
-
-
 
