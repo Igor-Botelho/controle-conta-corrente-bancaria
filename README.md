@@ -32,7 +32,7 @@ E mostrado ao usuário um histórico das operações realizadas, com o valor, ti
 #A estrutura do backend consiste em
 
 
-![image](https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png)
+![image](https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png =250x)
 
 A estrutura é dividida em um db responsável pelos módulos e sememas dos serviços e os serviços que chamam as funções do model e fazendo os devidos tratamentos antes dos dados serem salvos.
 
