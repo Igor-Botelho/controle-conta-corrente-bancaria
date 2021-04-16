@@ -8,7 +8,7 @@ O projeto consiste em um controle de conta corrente bancária que processa solic
 
 - Resgate: O usuário digitar o valor que deseja realizar o resgate em seguida é mostrada a conta do usuário para qual o resgate foi enviado. 
 
--Pagamento: O usuário digita a linha digitável do boleto, se a linha tiver o valor do boleto o mesmo é debitado da conta, caso não tenha o usuário digita o valor que deseja pagar. 
+- Pagamento: O usuário digita a linha digitável do boleto, se a linha tiver o valor do boleto o mesmo é debitado da conta, caso não tenha o usuário digita o valor que deseja pagar. 
 
 - Linha digitável: É gerado a linha do boleto de depósito seguindo a documentação http://www.jrimum.org/bopepo/wiki/Componente/Documentacao/Negocio#Aceite, não foram gerados os digitos verificadores que serão adicionado posteriormente.
 
@@ -64,9 +64,9 @@ Para executar esse programa é necessário:
  
 # Como executar: 
 
-1 passo: abra dois terminais no caminho /controle-conta-corrente-bancaria/frontend.
-2 passo: no primeiro terminal execute npm run start-server para executar o servidor do mongo db. 
-3 passo: no segundo terminal execute npm start para executar a aplicação react. 
+- 1 passo: abra dois terminais no caminho /controle-conta-corrente-bancaria/frontend.
+- 2 passo: no primeiro terminal execute npm run start-server para executar o servidor do mongo db. 
+- 3 passo: no segundo terminal execute npm start para executar a aplicação react. 
 
 Não existe criação de usuário, o projeto já é inicializado com um usuário padrão.
 
