@@ -112,9 +112,9 @@ function ModalDeposito({ contaId }) {
                       {dado.payload[0].transacaoDeposito.linhaDigitavel}
 
                       <p className="alet">
-                        A transação de deposito por motivos de teste esta sendo
-                        refletida no saldo atual mas no bando de dados é salva
-                        como `pendente` esperando o pagamento ou transferencia
+                        A transação de deposito por motivos de teste está sendo
+                        refletida no saldo atual, mas no banco de dados é salva
+                        como `pendente` esperando o pagamento ou transferência
                         do valor
                       </p>
                     </span>
@@ -197,9 +197,9 @@ function getInformacoesTransferencia({
       </div>
 
       <p className="alet">
-        A transação de deposito por motivos de teste esta sendo refletida no
-        saldo atual mas no bando de dados é salva como `pendente` esperando o
-        pagamento ou transferencia do valor
+        transação de deposito por motivos de teste está sendo refletida no saldo
+        atual, mas no banco de dados é salva como `pendente` esperando o
+        pagamento ou transferência do valor
       </p>
     </div>
   );
