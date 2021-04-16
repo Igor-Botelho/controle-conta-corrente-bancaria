@@ -4,15 +4,15 @@ O projeto consiste em um controle de conta corrente bancária que processa solic
 
 # As regras presentes nesse software são: 
 
-Depósito: O usuário digita o valor do depósito em seguida é dado a opção para o mesmo escolher o boleto que quer fazer o depósito ou uma conta para fazer transferência. 
+Depósito: O usuário digita o valor do depósito em seguida é dado a opção para o mesmo escolher o boleto que quer fazer o depósito ou uma conta para fazer transferência, para motivos de testes o valor está afetando o saldo no momento da solicitação, somente para testes de interface, a trasação na realidade é salva como pendente aguardando o pagamento.
 
-Resgate: O usuário digitar o valor que deseja realizar o resgate em seguida é mostrada a conta do usuário ao qual o resgate foi enviado. 
+Resgate: O usuário digitar o valor que deseja realizar o resgate em seguida é mostrada a conta do usuário para qual o resgate foi enviado. 
 
 Pagamento: O usuário digita a linha digitável do boleto, se a linha tiver o valor do boleto o mesmo é debitado da conta, caso não tenha o usuário digita o valor que deseja pagar. 
 
-Linha digitável: É gerado a linha do boleto de depósito seguindo a documentação http://www.jrimum.org/bopepo/wiki/Componente/Documentacao/Negocio#Aceite, não foram gerados os digitos verificadores vai ser adicionado posteriormente.
+Linha digitável: É gerado a linha do boleto de depósito seguindo a documentação http://www.jrimum.org/bopepo/wiki/Componente/Documentacao/Negocio#Aceite, não foram gerados os digitos verificadores que serão adicionado posteriormente.
 
-Rotina de rendimento: A rotina de rendimento roda a cada 24 horas, o valor do rendimento é calculado com o saldo atual * uma taxa de juros diaria, foi definido um valor de taxa de 0.005 para testes mas  ela é parametrizevel, a rotina calcula o rendimento do mês acumulando os rendimentos diarios, no primeiro dia de cada mês é zerado o rendimento mensal do mês anterior e começa a conta o do mês atual, nesse momento é salva uma transação no banco de dados com o valor em rendimentos do mês que passou.
+Rotina de rendimento: A rotina de rendimento roda a cada 24 horas, o valor do rendimento é calculado com o saldo atual * uma taxa de juros diaria, foi definido um valor de taxa de 0.005 para testes mas ela é parametrizevel, a rotina calcula o rendimento do mês acumulando os rendimentos diarios, no primeiro dia de cada mês é zerado o rendimento mensal do mês anterior e começa a contar os rendimentos do mês atual, nesse momento é salva uma transação no banco de dados com o valor em rendimentos do mês que passou.
 
 Histórico das operações: toda transação é salva no banco de dados e no frontend aparecem essas transações.
 
@@ -29,22 +29,22 @@ Histórico das operações: toda transação é salva no banco de dados e no fro
 
 # A estrutura do backend consiste em:
 
-![image](https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png)
+!<img src= "https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png" width="400">
 
 A estrutura é dividida em um db responsável pelos models e schemas dos serviços e os serviços que chamam as funções do model e fazendo os devidos tratamentos antes dos dados serem salvos no db.
 
-![image](https://user-images.githubusercontent.com/18398837/114959151-d98b2a00-9e3a-11eb-8588-549086b789ef.png)
+!<img src="https://user-images.githubusercontent.com/18398837/114959151-d98b2a00-9e3a-11eb-8588-549086b789ef.png"  width="400">
 
 Cada serviço tem seus testes de unidade e de integração com cobertura de 100%.
 
-![image](https://user-images.githubusercontent.com/18398837/114960620-cf1e5f80-9e3d-11eb-8cbb-0e5a90b95cdd.png)
+!<img src="https://user-images.githubusercontent.com/18398837/114960620-cf1e5f80-9e3d-11eb-8cbb-0e5a90b95cdd.png"  width="800"> 
 
-![image](https://user-images.githubusercontent.com/18398837/114960636-d5acd700-9e3d-11eb-951b-4e0c390febaa.png)
+!<img src="https://user-images.githubusercontent.com/18398837/114960636-d5acd700-9e3d-11eb-951b-4e0c390febaa.png"  width="800">
 
 
 # A estrutura do front consiste em
 
-![image](https://user-images.githubusercontent.com/18398837/114959379-528a8180-9e3b-11eb-8131-2e17fdd84f44.png)
+!<img src="https://user-images.githubusercontent.com/18398837/114959379-528a8180-9e3b-11eb-8131-2e17fdd84f44.png"  width="400">
 
 A estrutura do frontend possui uma pasta backend responsável por chamar os métodos do backend  e retornar as respostas para o front end. Além dessa página existe a página de componente, pages e serviços essa qual possui os serviços e os arquivos responsáveis pelas chamas de api. 
 
