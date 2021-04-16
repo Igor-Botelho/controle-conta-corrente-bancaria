@@ -3,8 +3,6 @@ import React from "react";
 import { Chart } from "react-google-charts";
 
 function GraficoRendimentos({ saldo, rendimento }) {
-  console.log({ rendimento });
-
   return (
     <Chart
       width={"22rem"}
