@@ -120,7 +120,7 @@ Além disso existe um modal modal para a listagem das transações clicando no V
 
 ![image](https://user-images.githubusercontent.com/18398837/114962556-44d7fa80-9e41-11eb-90ec-a724003a0860.png)
 
-# Mobile versão
+# Versão mobile
 
 <img src="https://user-images.githubusercontent.com/18398837/115016633-b2a91400-9e8b-11eb-80d1-c136c4c86b61.png"  width="400">
 
