@@ -67,6 +67,7 @@ Para executar esse programa é necessário:
 - 1 passo: abra dois terminais no caminho /controle-conta-corrente-bancaria/frontend.
 - 2 passo: no primeiro terminal execute npm run start-server para executar o servidor do mongo db. 
 - 3 passo: no segundo terminal execute npm start para executar a aplicação react. 
+- Para executar os testes  entre no caminho /controle-conta-corrente-bancaria/backend e execute npm test
 
 Não existe criação de usuário, o projeto já é inicializado com um usuário padrão.
 
