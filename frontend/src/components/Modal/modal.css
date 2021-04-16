@@ -1,0 +1,99 @@
+.item-atualizacao {
+  font-size: 1.2rem;
+  color: white;
+  background-color: #1d3072;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+.card-atualizacao {
+  list-style: none;
+}
+
+.informacoes {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.operacoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ver-mais {
+  color: #1d3072;
+  font-weight: bolder;
+}
+
+.ver-mais:hover {
+  text-decoration: none;
+}
+
+.fechar-modal {
+  background-color: #1d3072;
+}
+
+.operacao {
+  background-color: #1d3072;
+}
+
+.operacao {
+  margin-top: 1rem;
+  width: 10rem;
+  border-radius: 35px;
+  color: white;
+}
+
+.posicao-campo-preenchimento-valor {
+  text-align: center;
+}
+
+.input-valor {
+  outline: 0;
+  width: 20rem;
+  border-width: 0 0 1px;
+  border-color: #909093;
+}
+
+.input-valor:focus {
+  border-color: #1d3072;
+}
+
+.modal-butom {
+  border-radius: 50px;
+  background-color: #1d3072;
+}
+
+.input-valor::placeholder {
+  color: black;
+}
+
+.input-valor::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.informacoes-modal {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: "Rubik";
+}
+
+.boleto {
+  font-size: 1.5rem;
+}
+
+.alet {
+  color: red;
+  font-size: 1rem;
+}
+
+.boleto-exemplo-titulo {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.boleto-exemplo {
+  padding: 1rem;
+}
