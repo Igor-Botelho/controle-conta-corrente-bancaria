@@ -1,6 +1,6 @@
 module.exports = {
-  nome: "Igor botelho",
-  email: "igor@gmail.com",
+  nome: "Joao da silva",
+  email: "joao@gmail.com",
   senha: "6552156",
   cpf: "99999999999",
   telefone: "3155556666",
@@ -10,13 +10,13 @@ module.exports = {
   bairro: "Centro",
   cidade: "Belo Horizonte",
   uf: "MG",
-  dataNascimento: "1996-10-08",
-  contasBancarias: {
-    1596863: {
-      banco: "Banco teste",
+  dataNascimento: "1990-11-12",
+  contasBancarias: [
+    {
+      banco: "Banco para resgate",
       numeroConta: "1596863",
       agencia: "1324",
       tipo: "corrente",
     },
-  },
+  ],
 };
