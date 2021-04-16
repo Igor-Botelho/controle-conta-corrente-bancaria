@@ -38,27 +38,21 @@ function ModalResgate({ contaId }) {
   const [body, setBody] = useState(inicial());
 
   const resgateAction = async () => {
-    const pagamento = dispatch(await registrarResgate(contaId, valor * 100));
+    const pagamento = dispatch(
+      await registrarResgate(contaId, Math.round(valor * 100))
+    );
 
     const [payload] = pagamento.payload;
-
-    console.log("ERRRRRRROOO : ", payload);
 
     if (payload && payload.error) {
       setMensagemValidacao(payload.error);
     } else {
       setMensagemValidacao("");
 
-      //setModalShow(false);
-
       dispatch(await loadconta({}));
       const cliente = dispatch(await loadcliente());
 
-      console.log("CLIIIIIIENTE : ", cliente.payload);
-
       const [contasBancarias] = cliente.payload.contasBancarias;
-
-      console.log("$$$$$$$ : ", contasBancarias);
 
       dispatch(await consultarTransacoes(contaId));
       setResgatado(true);

@@ -43,7 +43,7 @@ function ModalPgamento({ contaId }) {
             <p className="boleto-exemplo-geral">
               <small>Boleto exemplo com valor fixo:</small>
               <br />
-              <b>00194444505123456987012159632500085920000001500</b>
+              <b>00194444505123456987012159632500085920000000100</b>
             </p>
           </li>
           <li>
