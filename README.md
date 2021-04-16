@@ -1,6 +1,6 @@
 O projeto consiste em um controle de conta corrente bancária que processa solicitações de depósito, resgate e pagamentos. 
 
-As regras presentes nesse softare são: 
+#As regras presentes nesse softare são: 
 
 Depósito:  O usuário digita o valor do deposito em seguida é dado a opção para o mesmo escolher o boleto que quer fazer o depósito ou uma conta para fazer transferência. 
 
@@ -34,7 +34,7 @@ E mostrado ao usuário um histórico das operações realizadas, com o valor, ti
 
 #A estrutura do backend consiste em
 
-![image](https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png =10px)
+![image](https://user-images.githubusercontent.com/18398837/114958998-8c0ebd00-9e3a-11eb-983e-26ca25885d32.png)
 
 A estrutura é dividida em um db responsável pelos models e schemas dos serviços e os serviços que chamam as funções do model e fazendo os devidos tratamentos antes dos dados serem salvos no db.
 
