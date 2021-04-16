@@ -1,5 +1,11 @@
-const { atualizarConta, recuperarConta } = require("../conta");
+"use strict";
+
+const {
+  atualizar: atualizarConta,
+  recuperar: recuperarConta,
+} = require("../conta");
 const { cadastrarTransacaoCredito } = require("../transacao");
+const dadosTransferencia = require("../../../test/fixtures/transferencia.fixture");
 
 module.exports = async function registrarDepositoConta(contaId, valorDeposito) {
   const conta = await recuperarConta(contaId);
@@ -8,12 +14,17 @@ module.exports = async function registrarDepositoConta(contaId, valorDeposito) {
     contaId: conta._id,
     tipo: "credito",
     valor: valorDeposito,
+    status: "pendente",
   });
 
   const saldoAtualizado = conta.saldo + transacaoDeposito.valor;
 
+  await atualizarConta(contaId, {
+    saldo: saldoAtualizado,
+  });
+
   return {
-    conta: atualizarConta(contaId, { saldao: saldoAtualizado }),
-    transacao: transacaoDeposito,
+    transacaoDeposito,
+    dadosTransferencia: dadosTransferencia(valorDeposito),
   };
 };
