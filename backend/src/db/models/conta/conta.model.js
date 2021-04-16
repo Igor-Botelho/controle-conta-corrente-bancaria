@@ -1,3 +1,5 @@
+"use strict";
+
 const mongoose = require("mongoose");
 const schema = require("./conta.schema");
 
@@ -12,6 +14,9 @@ const dbConta = {
   },
   cadastrar(dados) {
     return conta.insertMany(dados);
+  },
+  consultar() {
+    return conta.find();
   },
   recuperar(contaId) {
     return conta.findById(contaId);
