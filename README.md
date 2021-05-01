@@ -1,4 +1,6 @@
-# Controle conta corrente bancária  
+# Still working in progress
+
+# Controle conta corrente bancária  - 
 
 O projeto consiste em um controle de conta corrente bancária que processa solicitações de depósito, resgate e pagamentos. 
 
